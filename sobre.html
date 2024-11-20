@@ -1,0 +1,243 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia de Grimmer - Marca Tóxica</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <style>
+        /* Estilo de fondo con gradiente negro y morado */
+        body {
+            background: linear-gradient(to bottom, #000000, #6a0dad); /* Gradiente de negro a morado */
+            font-family: 'Arial', sans-serif;
+            color: white; /* Texto en blanco para contraste con el fondo oscuro */
+        }
+
+        /* Imagen de fondo completa pero pequeña */
+    .header-img {
+        max-width: 100%;  /* La imagen se ajusta al ancho máximo del contenedor */
+        height: auto;     /* Mantiene la proporción original de la imagen */
+        display: block;   /* Elimina el espacio blanco debajo de la imagen */
+        margin: 0 auto;   /* Centra la imagen */
+    }
+
+    /* Estilo para el texto del encabezado */
+    .header-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-align: center;
+    }
+
+        .section-title {
+            text-align: center;
+            margin: 40px 0;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        /* Estilos de las tarjetas de información */
+        .card-body {
+            background-color: #2c2c2c; /* Fondo oscuro para las tarjetas */
+            color: #ffffff;
+            border: 1px solid #6a0dad; /* Bordes morados */
+            border-radius: 15px;
+        }
+
+        .card-title {
+            color: #6a0dad;
+        }
+
+        .card-text {
+            font-size: 1.2rem;
+            text-align: justify;
+        }
+
+        /* Estilo para el footer */
+        footer {
+            background-color: #6a0dad; /* Fondo morado para el footer */
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Estilo para enlaces */
+        a {
+            color: #ffffff;
+        }
+
+        a:hover {
+            color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+    <nav class="bg-purple-900 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between">
+                <!-- Logo con imagen de Grimer -->
+                <div class="flex items-center space-x-2">
+                    <a href="#" class="flex items-center py-5 px-2 text-purple-300 hover:text-white">
+                        <!-- Imagen de Grimer -->
+                        <img src="https://db.pokemongohub.net/_next/image?url=%2Fimages%2Fofficial%2Ffull%2F088.webp&w=640&q=75" alt="Logo Grimer" class="h-8 w-8 mr-2">
+                        <span class="font-bold text-xl">Grimer Menu</span>
+                    </a>
+                </div>
+
+                <!-- Menú de Navegación -->
+                <div class="hidden md:flex items-center space-x-1">
+                    <a href="https://codepen.io/Roberto-Echeverr-a/pen/qBewgqb" target="_blank" class="py-5 px-3 text-purple-300 hover:text-white transition duration-300">Inicio</a>
+                    <a href="https://codepen.io/Roberto-Echeverr-a/pen/OJKGdMO" target="_blank" class="py-5 px-3 text-purple-300 hover:text-white transition duration-300">Catálogo</a>
+                    <a href="https://codepen.io/Roberto-Echeverr-a/pen/dyxLaGX" target="_blank" class="py-5 px-3 text-purple-300 hover:text-white transition duration-300">Atención al Cliente</a>
+                    <a href="https://codepen.io/Roberto-Echeverr-a/pen/eYqoxpo" target="_blank" class="py-5 px-3 text-purple-300 hover:text-white transition duration-300">Sobre nosotros</a>
+                </div>
+
+                <!-- Botón para el menú móvil -->
+                <div class="md:hidden flex items-center">
+                    <button class="mobile-menu-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-purple-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Menú móvil -->
+        <div class="mobile-menu hidden md:hidden bg-purple-800">
+            <a href="https://codepen.io/Roberto-Echeverr-a/pen/qBewgqb" class="block py-2 px-4 text-sm text-purple-300 hover:bg-purple-700">Inicio</a>
+            <a href="https://codepen.io/Roberto-Echeverr-a/pen/OJKGdMO" class="block py-2 px-4 text-sm text-purple-300 hover:bg-purple-700">Catalogo</a>
+            <a href="https://codepen.io/Roberto-Echeverr-a/pen/dyxLaGX" class="block py-2 px-4 text-sm text-purple-300 hover:bg-purple-700">Atencion al Cliente</a>
+            <a href="https://codepen.io/Roberto-Echeverr-a/pen/eYqoxpo" class="block py-2 px-4 text-sm text-purple-300 hover:bg-purple-700">Sobre nosotros</a>
+        </div>
+    </nav>
+
+  <!-- Encabezado con la imagen de fondo -->
+<div class="container-fluid position-relative p-0">
+    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/088.png" alt="Grimmer Pokémon" class="header-img">
+    <div class="header-text">
+        <h1>La Marca Grimmer</h1>
+        <p>Un legado de poder, toxinas y estilo único</p>
+    </div>
+</div>
+
+    <!-- Sección de Historia -->
+    <div class="container">
+        <h2 class="section-title">La Historia de la Creación de Grimmer</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Los Primeros Días de Grimmer</h5>
+                        <p class="card-text">Grimmer, originario de la región de Kanto, fue el primer Pokémon en inspirar la creación de una marca que, a lo largo de los años, se ha destacado por su estética y su estilo rebelde. Con su forma peculiar, llena de toxinas, Grimmer ha sido reconocido por ser una figura emblemática para los fans del anime y videojuegos. Esta inspiración dio lugar a la fundación de la marca Grimmer, que utiliza la estética de la naturaleza tóxica y el poder del Pokémon para crear ropa y accesorios únicos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">El Concepto de la Marca</h5>
+                        <p class="card-text">Grimmer no solo es una marca, es una filosofía. El concepto detrás de la marca está inspirado en las características del Pokémon Grimmer, que representa lo "oscuro" y lo "tóxico". La marca utiliza estos elementos para transmitir poder, resistencia y estilo. Los productos de Grimmer están diseñados para quienes buscan destacar, usando elementos como el color morado, negro, y detalles que evocan el veneno, la corrosión, y la lucha.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de Poderes y Características de Grimmer -->
+    <div class="container">
+        <h2 class="section-title">Poderes y Características de Grimmer</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Poder Tóxico</h5>
+                        <p class="card-text">Grimmer es conocido por su habilidad para liberar toxinas peligrosas en su entorno. Esta habilidad fue la base de la marca, la cual utiliza materiales que evocan la misma peligrosidad y poder, dándole a sus productos un carácter inconfundible.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Resistencia y Fuerza</h5>
+                        <p class="card-text">A pesar de ser un Pokémon de tipo veneno, Grimmer tiene una sorprendente resistencia. Esto inspiró a la marca a crear productos duraderos y con una fuerte personalidad, capaces de resistir las tendencias y los cambios del mercado.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Estética Única</h5>
+                        <p class="card-text">La estética de Grimmer, basada en su apariencia única y su naturaleza corrosiva, inspiró una colección de ropa que destaca por su estilo oscuro, rebelde y atractivo. Cada prenda está diseñada para aquellos que no temen ser diferentes y quieren expresar su individualidad.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="relative bg-gradient-to-r from-purple-800 via-purple-900 to-black text-purple-300 py-16">
+        <!-- Decoración de fondo -->
+        <div class="absolute inset-0 opacity-30 bg-[url('https://i.imgur.com/tSIfQgy.jpeg')] bg-cover bg-center"></div>
+        <div class="relative max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12 z-10">
+            <div>
+                <h3 class="text-2xl font-bold text-white mb-6">Sobre Grimer</h3>
+                <p class="text-sm mb-6">
+                    Grimer es la mezcla perfecta entre moda alternativa y diseño único. Inspirados en la creatividad y el estilo, nuestras prendas están hechas para destacar en cualquier lugar.
+                </p>
+                <img src="https://db.pokemongohub.net/_next/image?url=%2Fimages%2Fofficial%2Ffull%2F088.webp&w=640&q=75" alt="Grimer Logo" class="h-20 w-20 transform hover:scale-110 transition durationrápida ease-in-out mb-4"> </div>
+
+<!-- Enlaces rápidos -->
+        <div>
+            <h3 class="text-2xl font-bold text-white mb-6">Creadores</h3>
+            <ul>
+                <li class="mb-2">
+                    <span class="block text-sm">Jorge Mario Jimenez</span>
+                </li>
+                <li class="mb-2">
+                    <span class="block text-sm">Damian castro</span>
+                </li>
+                <li class="mb-2">
+                    <span class="block text-sm">Roberto Echeverria</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Contacto -->
+        <div>
+            <h3 class="text-2xl font-bold text-white mb-6">Contáctanos</h3>
+            <ul>
+                <li class="mb-2">
+                    <span class="block text-sm">Teléfono: +52 123 456 7890</span>
+                </li>
+                <li class="mb-2">
+                    <span class="block text-sm">Email: contacto@grimer.com</span>
+                </li>
+                <li class="mb-2">
+                    <span class="block text-sm">Dirección: Calle Ficticia #123, Ciudad Imaginaria</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+<script>
+    const mobileMenuButton = document.querySelector(".mobile-menu-button");
+    const mobileMenu = document.querySelector(".mobile-menu");
+
+    mobileMenuButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+    });
+</script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
